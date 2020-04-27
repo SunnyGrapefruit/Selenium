@@ -18,7 +18,6 @@ def browser(request):
     if user_language == "ru":
         print("\nstart browser for ru-test..")
         browser = webdriver.Chrome(options=options)
-
     elif user_language == "en":
         print("\nstart browser for en-test..")
         browser = webdriver.Chrome(options=options)
