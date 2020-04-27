@@ -10,7 +10,7 @@ from selenium.common.exceptions import NoSuchElementException
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
 
-def test_guest_should_see_login_link(browser):
+def test_exist_button(browser):
     browser.get(link)
     try:
         browser.find_element_by_class_name("btn-add-to-basket")
