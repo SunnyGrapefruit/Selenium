@@ -17,18 +17,18 @@ def browser(request):
 
     if user_language == "ru":
         print("\nstart browser for ru-test..")
-        browser = webdriver.Chrome(options=options)
+        browser = webdriver.Chrome(options=options, executable_path='C:\chromedriver\chromedriver.exe')
     elif user_language == "en":
         print("\nstart browser for en-test..")
-        browser = webdriver.Chrome(options=options)
+        browser = webdriver.Chrome(options=options, executable_path='C:\chromedriver\chromedriver.exe')
 
     elif user_language == "es":
         print("\nstart browser for es-test..")
-        browser = webdriver.Chrome(options=options)
+        browser = webdriver.Chrome(options=options, executable_path='C:\chromedriver\chromedriver.exe')
 
     elif user_language == "fr":
         print("\nstart browser for fr-test..")
-        browser = webdriver.Chrome(options=options)
+        browser = webdriver.Chrome(options=options, executable_path='C:\chromedriver\chromedriver.exe')
 
     else:
         raise pytest.UsageError("--language should be ru, en, fr or es")
