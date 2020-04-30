@@ -11,10 +11,10 @@ class LoginPageLocators():
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
 
-    # LOGIN_EMAIL = (By.CSS_SELECTOR, "#login_link")
-    # LOGIN_PASSWORD = (By.CSS_SELECTOR, "#login_link")
-    #
-    # REGISTER_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
-    # REGISTER_PASS = (By.CSS_SELECTOR, "#id_registration-password1")
-    # REGISTER_CONFIRM_PASS = (By.CSS_SELECTOR, "#id_registration-password2")
-    # REGISTER_BUTTON = (By.CSS_SELECTOR, "button[name='registration_submit']")
+class ProductPageLocators():
+    BUTTON_ADD = (By.CSS_SELECTOR, "button.btn-primary")
+    BOOK_PRICE = (By.XPATH, "//*[@id='content_inner']/article/div[1]/div[2]/p[1]")
+    BOOK_TITLE = (By.XPATH, "//*[@id='content_inner']/article/div[1]/div[2]/h1")
+    ASSERT_BOOK_TITLE = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")
+    ASSERT_BOOK_PRICE = (By.XPATH, "//*[@id='messages']/div[3]/div/p[1]/strong")
+    SUCCESS_MESSAGE = (By.XPATH, "//*[@id='messages']/div[1]")
