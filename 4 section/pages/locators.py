@@ -18,3 +18,13 @@ class ProductPageLocators():
     ASSERT_BOOK_TITLE = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")
     ASSERT_BOOK_PRICE = (By.XPATH, "//*[@id='messages']/div[3]/div/p[1]/strong")
     SUCCESS_MESSAGE = (By.XPATH, "//*[@id='messages']/div[1]")
+
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    VIEW_CART = (By.XPATH, "//*[@id='default']/header/div[1]/div/div[2]/span")
+
+
+class CartPageLocators():
+    EMPTY_CART = (By.XPATH, "//*[@id='content_inner']/p")
+    ITEMS_IN_CART = (By.CLASS_NAME, "basket-title")
