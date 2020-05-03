@@ -18,11 +18,11 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     BUTTON_ADD = (By.CSS_SELECTOR, "button.btn-primary")
-    BOOK_PRICE = (By.XPATH, "//*[@id='content_inner']/article/div[1]/div[2]/p[1]")
-    BOOK_TITLE = (By.XPATH, "//*[@id='content_inner']/article/div[1]/div[2]/h1")
-    ASSERT_BOOK_TITLE = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")
-    ASSERT_BOOK_PRICE = (By.XPATH, "//*[@id='messages']/div[3]/div/p[1]/strong")
-    SUCCESS_MESSAGE = (By.XPATH, "//*[@id='messages']/div[1]")
+    BOOK_PRICE = (By.CSS_SELECTOR, "#content_inner .product_main .price_color")
+    BOOK_TITLE = (By.CSS_SELECTOR, "#content_inner .product_main h1")
+    ASSERT_BOOK_TITLE = (By.CSS_SELECTOR, "#messages div.alert:nth-child(1) div.alertinner strong")
+    ASSERT_BOOK_PRICE = (By.CSS_SELECTOR, "#messages div.alert:nth-child(3) p strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages .alert-success:nth-child(1)")
 
 
 class BasePageLocators():
